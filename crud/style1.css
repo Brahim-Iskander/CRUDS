@@ -1,0 +1,166 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added for better layout control */
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Container for CRUD */
+.crud {
+    width: 80%;
+    margin: 0 auto; /* Simplified from margin: auto */
+}
+
+/* Header styling */
+.header {
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header p {
+    margin: 30px 20px;
+}
+
+/* Input styling */
+input {
+    background-color: #111;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px; /* Increased padding for better usability */
+    margin-top: 4px;
+    border-radius: 4px;
+    color: #fff;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+input:focus {
+    background-color: #000;
+    transform: scale(1.05); /* Slightly reduced scale for subtlety */
+}
+
+/* Price section */
+.price {
+    display: flex; /* Added for better alignment */
+    align-items: center;
+    gap: 10px; /* Space between elements */
+}
+
+.price input {
+    width: 20%;
+}
+
+small {
+    background-color: #e63946; /* Softer red for better contrast */
+    padding: 3px 6px; /* Slightly more padding */
+    border-radius: 4px;
+    font-size: 12px; /* Explicit font size */
+}
+
+#total::before {
+    content: "Total: "; /* Added space */
+    font-weight: bold;
+}
+
+/* Button styling */
+button {
+    height: 30px; /* Slightly taller buttons */
+    display: flex;
+    justify-content: center; /* Centered content */
+    align-items: center;
+    margin: 10px auto; /* Simplified margins */
+    color: #fff;
+    background-color: #550076;
+    padding: 0 40px; /* Adjusted padding */
+    border: none; /* Added for consistency */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, letter-spacing 0.5s ease; /* Smooth transitions */
+}
+
+button:hover {
+    background-color: #610485;
+    letter-spacing: 2px;
+}
+
+#button {
+    width: 100%;
+    text-align: center;
+}
+
+/* Output section */
+.output {
+    width: 100%;
+}
+
+/* Search buttons */
+.btnsearcher { /* Fixed typo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; /* Added spacing between buttons */
+}
+
+.btnsearcher button {
+    width: 45%;
+    padding: 0 20px; /* Adjusted padding */
+}
+
+/* Table styling */
+table {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse; /* Added for cleaner table look */
+}
+
+table th {
+    text-transform: uppercase;
+    padding: 10px; /* Added padding */
+    background-color: #444; /* Subtle background for headers */
+}
+
+table td {
+    padding: 8px; /* Added padding for table cells */
+}
+
+tbody button {
+    padding: 0 20px; /* Consistent padding */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .crud {
+        width: 90%; /* Wider on smaller screens */
+    }
+    .price {
+        flex-direction: column; /* Stack inputs vertically */
+    }
+    .price input {
+        width: 100%; /* Full width on small screens */
+    }
+    .btnsearcher {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+    .btnsearcher button {
+        width: 100%; /* Full width buttons */
+    }
+}
+#imprint{
+    background-color: #0c8f00;
+}
+.obligation{
+    color: #fc0000;
+}
+#oblig{
+    color: rgba(240, 255, 255, 0.586);
+    font-size: 13px;
+}
